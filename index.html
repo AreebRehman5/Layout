@@ -33,20 +33,45 @@
     text-align: center;
     line-height: 80px;
 }
-.content-area{
-    display: flex;
-	background-color: aqua;
-}
-.aside{
-    width: 25%;
-    height: 400px;
-    border: 1px solid #000;
-	background-color: crimson;
-}
-.aside h1{
+
+.side h1{
     text-align: center;
-    line-height: 400px;
 }
+
+.row {
+  display: flex;
+  
+}
+
+/* Create two equal columns that sits next to each other */
+.column_left {
+  flex: 20%;
+  padding: 10px;
+  height: 500px;
+  
+}
+
+.column_right {
+  flex: 100%;
+  padding: 10px;
+  height: 500px; /* Should be removed. Only for demonstration */
+ 
+ 
+}
+
+
+.column {
+  float: left;
+  width: 22.22%;
+  padding: 50px;
+  margin: 20px;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+  
+}
+
 
 .footer{
     height: 100px;
@@ -64,18 +89,49 @@
 	<div class="header">
 		<h1><b>Header</b></h1>
 	</div>
-	<div class="content area">
-		<div class="aside">
-			<h1><b>Slidebar</b></h1>
-			
 
-			</div>
+    <div class="row">
+        <div class="column_left" style="background-color:lightskyblue;">
+          <h2>Sidebar</h2>
+          
+          <div class="sidebar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+        
+      <div style="text-align: center;">
+      
+        <div class="column"  style="background:green;">
+          Box 1
+        </div>
+        <div class="column"  style="background:blue;">
+         Box 2
+        </div>
+        <div class="column"  style="background:red;">
+          Box 3
+        </div>
+    
+       <div class="column"  style="background:green;">
+        Box 4
+      </div>
+      <div class="column"  style="background:green;">
+        Box 4
+      </div>
+      <div class="column"  style="background:green;">
+        Box 4
+      </div>
+     
+  </div>
+</div>
 
-		</div>
 		<div class="footer">
 			<h1><b>Footer</b></h1>
 		</div>
 
-	</div>
 </body>
 </html>
